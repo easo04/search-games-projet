@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'search-games-projet';
+  title = 'hEYhEY';
+  isAuth = false;
+
+  constructor(){
+     setTimeout(
+      () => {
+        this.isAuth = true;
+      }, 4000
+    );
+  }
 }
