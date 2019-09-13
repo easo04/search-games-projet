@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonPremierComponent } from './mon-premier/mon-premier.component';
 import { RechercheTerrainsComponent } from './recherche-terrains/recherche-terrains.component';
+import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MonPremierComponent,
-    RechercheTerrainsComponent
+    RechercheTerrainsComponent,
+    MenuPrincipalComponent
   ],
   imports: [
     BrowserModule,

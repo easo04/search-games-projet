@@ -1,18 +1,16 @@
+<app-menu-principal></app-menu-principal>
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Search games
   </h1>
+  <div class="panel panel-default">
+     <div class="panel-body">L'outil pour rechercher tous les matchs de soccer sur un terrain precis!!</div>
+  </div>
 </div>
-<app-mon-premier></app-mon-premier>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h2>Mes appareils</h2>
-      <ul class="list-group">
-        <app-recherche-terrains></app-recherche-terrains>
-         <app-recherche-terrains></app-recherche-terrains>
-          <app-recherche-terrains></app-recherche-terrains>
-      </ul>
+      <app-recherche-terrains></app-recherche-terrains>
       <button class="btn btn-success" [disabled]="!isAuth">Tout allumer</button>
     </div>
   </div>
