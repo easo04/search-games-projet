@@ -8,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class RechercheTerrainsComponent implements OnInit {
 
   name: String = 'Test';
+  showCriteres = false;
+  showInformationsTerrain = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showCriteresFilter(){
+	this.showCriteres = this.showCriteres ? false : true;
+  }
+
+  showInfosTerrain(){
+	this.showInformationsTerrain = this.showInformationsTerrain ? false : true;
   }
 
 }
