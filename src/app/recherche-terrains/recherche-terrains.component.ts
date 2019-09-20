@@ -11,11 +11,12 @@ export class RechercheTerrainsComponent implements OnInit {
   name: String = 'Test';
   showCriteres = false;
   showInformationsTerrain = false;
+  terrains = [];
 
   constructor(private terrainsService: TerrainsService) { }
 
   ngOnInit() {
-    this.terrainsService.getAllTerrains.subscribe(res => {
+    this.terrainsService.getAllTerrains().subscribe(res => {
       this.terrains = res;
     });
   }
