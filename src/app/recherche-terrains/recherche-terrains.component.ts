@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TerrainsService} from "../services/terrains.service";
 
 @Component({
   selector: 'app-recherche-terrains',
@@ -11,9 +12,10 @@ export class RechercheTerrainsComponent implements OnInit {
   showCriteres = false;
   showInformationsTerrain = false;
 
-  constructor() { }
+  constructor(private terrainsService: TerrainsService) { }
 
   ngOnInit() {
+    this.terrains = this.terrainsService.getAllTerrains();
   }
 
   showCriteresFilter(){
