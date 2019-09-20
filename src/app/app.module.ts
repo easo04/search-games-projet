@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MonPremierComponent } from './mon-premier/mon-premier.component';
 import { RechercheTerrainsComponent } from './recherche-terrains/recherche-terrains.component';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal.component';
-import {TerrainsService} from "./services/terrains.service";
+import {TerrainsService} from './services/terrains.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {TerrainsService} from "./services/terrains.service";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     TerrainsService

@@ -5,9 +5,15 @@ import { map, catchError, tap } from 'rxjs/operators';
 
 export class TerrainsService {
 
+  urlEndpoint = ""
+
   constructor(private http: HttpClient){}
 
   getAllTerrains() {
-    return [];
+    return this.http.get(this.urlEndpoint);
+  }
+
+  addTerrain(params){
+
   }
 }

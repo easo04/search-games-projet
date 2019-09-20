@@ -15,7 +15,9 @@ export class RechercheTerrainsComponent implements OnInit {
   constructor(private terrainsService: TerrainsService) { }
 
   ngOnInit() {
-    this.terrains = this.terrainsService.getAllTerrains();
+    this.terrainsService.getAllTerrains.subscribe(res => {
+      this.terrains = res;
+    });
   }
 
   showCriteresFilter(){
